@@ -1,0 +1,109 @@
+/* Responsive pour petits appareils (écrans jusqu'à 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    /* Section des œuvres */
+    .artwork-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .artwork-item {
+        padding: 10px;
+    }
+
+    .artwork-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section Biographie de l'artiste */
+    .biography-section {
+        padding: 20px;
+    }
+
+    .biography-section img {
+        width: 100%;
+        margin: 0 0 15px 0;
+        display: block;
+    }
+
+    .biography-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .biography-section p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive pour très petits appareils (écrans jusqu'à 480px) */
+@media (max-width: 480px) {
+    /* Header */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+    /* Section des œuvres */
+    .artwork-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* Section Biographie de l'artiste */
+    .biography-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .biography-section p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .whatsapp-button {
+        padding: 8px 16px;
+    }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oeuvres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <header>
+        <h1>Bienvenue à la Galerie d'Art Logigue Artistique</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="oeuvres.html">Œuvres</a>
+        <a href="artistes.html">Artistes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1 class="oeuvres">Œuvres d'arts</h1>
+
+    <!-- Liste des œuvres -->
+    <div class="artwork-grid">
+        <!-- Exemple d'œuvre 1 -->
+        <div class="artwork">
+            <img src="image/1.jpg" alt="Œuvre 1" />
+            <h3>Portrait Classique</h3>
+            <p>Artiste: MJ Art 🎨 </p>
+            <p>Style: Photographie</p>
+            <p>Prix: $150</p>
+            <button onclick="addToCart('Portrait Classique 001', 'MJ Art', 'Portrait', 150)">Ajouter au panier</button>
+        </div>
+
+        <!-- Exemple d'œuvre 2 -->
+        <div class="artwork">
+            <img src="image/2.jpg" alt="Œuvre 2" />
+            <h3>Paysage</h3>
+            <p>Artiste: MJ Art 🎨</p>
+            <p>Style: Décoration Maison</p>  
+            <p>Prix: $100</p>
+            <button onclick="addToCart('Paysage 001', 'MJ Art', 'Décoration Maison', 100)">Ajouter au panier</button>
+        </div>
+        
+        <!-- Exemple d'œuvre 3 -->
+        <div class="artwork">
+            <img src="image/3.jpg" alt="Œuvre 2" />
+            <h3>Portrait classique</h3>
+            <p>Artiste: MJ Art 🎨</p>
+            <p>Style: Photographie</p>  
+            <p>Prix: $150</p>
+            <button onclick="addToCart('Portrait Classique 002', 'MJ Art', 'Portrait', 150)">Ajouter au panier</button>
+        </div>
+        
+        <!-- Exemple d'œuvre 4 -->
+        <div class="artwork">
+            <img src="image/4.jpg" alt="Œuvre 2" />
+            <h3>Portrait classique</h3>
+            <p>Artiste: MJ Art 🎨</p>
+            <p>Style: Photographie</p>  
+            <p>Prix: $150</p>
+            <button onclick="addToCart('Portrait Classique 003', 'MJ Art', 'Portrait', 150)">Ajouter au panier</button>
+        </div>
+        
+     <!-- Exemple d'œuvre 5 -->
+        <div class="artwork">
+            <img src="image/5.jpg" alt="Œuvre 2" />
+            <h3>Portrait classique</h3>
+            <p>Artiste: MJ Art 🎨</p>
+            <p>Style: Photographie</p>  
+            <p>Prix: $150</p>
+            <button onclick="addToCart('Portrait Classique 004', 'MJ Art', 'Portrait', 150)">Ajouter au panier</button>
+        </div>    
+
+        <!-- Ajoute plus d'œuvres ici -->
+    </div><br>
+
+    <!-- Panier d'achat -->
+    <h2 class="panier">Votre Panier</h2>
+    <ul id="cart-items">
+        <!-- Les articles ajoutés au panier s'afficheront ici -->
+    </ul>
+    <p class="total">Total: $<span id="total-price">0.00</span></p>
+
+    <!-- Boutons pour confirmer l'achat ou vider le panier -->
+    <button id="confirm-purchase">Confirmer l'achat et envoyer à WhatsApp</button>
+    <button id="clear-cart">Vider le panier</button><br>
+    
+    
+   
+  <footer>
+    <nav>
+        <a href="maquette.html">Maquette</a>
+        <a href="exposition.html">Exposition Virtuelle</a>
+    </nav>
+ <p>©2024, tous droit réservé...</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

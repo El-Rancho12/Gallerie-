@@ -1,0 +1,475 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+  header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+/* Bannière */
+.banner {
+    background-image: url('image/3.jpg');
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Section Intro */
+.intro {
+    text-align: center;
+    padding: 40px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Galerie d'œuvres */
+#oeuvres {
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.artwork {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.artwork:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artwork img:hover {
+    transform: scale(1.05);
+}
+
+.artwork h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.artwork p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.artwork button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.artwork button:hover {
+    background-color: #1EBE53;
+}
+
+.artwork img { transition: transform 0.3s ease; } .artwork img:hover { transform: scale(1.5); }
+
+/*oeuvres */
+.oeuvres {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+}
+
+
+
+/* Panier d'achat */
+.panier {
+    position: relative;
+    top: 20%;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+}
+
+.panier h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+#cart-items {
+    position: relative;
+    top: 20%;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    Display :block;
+    font-size:16px ;
+}
+
+
+ #total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+}
+
+.total{
+position: relative;
+    padding:20px;
+    font-size:1.5em ;
+}
+
+
+#confirm-purchase{
+    background-color: #0070ba;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#confirm-purchase:hover{
+    background-color: #005b9a;
+    color: red;
+}
+
+#clear-cart{
+position: relative;
+width: 100%;
+height: auto;
+top: 10px;
+    background-color: #0070ba;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#clear-cart:hover{
+    background-color: #005b9a;
+    color: red;
+}
+.button {
+    background-color: #0070ba;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005b9a;
+    color: red;
+    
+}
+#apropos{
+   position: relative;
+    top: 20%;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+#apropos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding:10px;
+}
+/* Page Artiste */
+
+.biography-section { 
+background-color: #fff;
+ padding: 30px; 
+ margin: 20px auto;
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 900px; } 
+  
+  .biography-section h2 {
+   font-size: 2rem; 
+   margin-bottom: 20px; color: #333; }
+  
+   .biography-section p {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    margin-bottom: 20px;
+     color: #666; }
+     
+      .biography-section img { 
+      float: left; 
+      margin-right: 20px; 
+      border-radius: 10px; 
+      width: 350px;
+       height: auto; } 
+       
+       .biography-section::after { 
+       content: "";
+        display: table; 
+        clear: both; }
+/* Contact */
+#contact {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+#contact a {
+    color: #25D366;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h1{
+    color:white;
+}
+
+/* Formulaire de contact */
+.contact-form-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.contact-form button {
+width: 100%;
+ background-color: #333;
+  color: white; 
+  padding: 10px 20px; border: none; border-radius: 5px; 
+  cursor: pointer; } 
+  
+  .contact-form button:hover { 
+  
+  background-color: #555; } /* Section WhatsApp */ .whatsapp-section { 
+  background-color: #fff;
+   padding: 20px; 
+   text-align: center; 
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); } 
+   
+   .whatsapp-section p { margin-bottom: 15px; }
+   
+  .oeuvres{
+      color: #333;
+  }
+  
+  #loyaltyProgram {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#collectorSpace {
+    background-color: #eef;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+#authenticityCertificate {
+    background-color: #faf8ef;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+width: 100%;
+height: auto;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+padding:10px;
+    margin: 0;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+
+
+
+
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.exposition-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+}
+
+#artwork-display {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#prev-btn, #next-btn, #fullscreen-btn {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#prev-btn {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next-btn {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fullscreen-btn {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+}
+
+#fullscreen-btn:hover, #prev-btn:hover, #next-btn:hover {
+    background-color: #666;
+}
+
